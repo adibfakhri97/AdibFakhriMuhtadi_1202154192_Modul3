@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/fotoDetail"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/namaAirDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoDetail"
+            android:text="Ini judul Air"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaAirDetail"
+            android:text="Ini deskripsi Air"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/levelbanyakAir"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/level_air"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detail"/>
+
+        <ImageView
+            android:id="@+id/tambah"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/levelbanyakAir"
+            android:layout_toRightOf="@+id/levelbanyakAir"
+            android:src="@drawable/ic_add"
+            android:onClick="tambahAir"/>
+
+        <ImageView
+            android:id="@+id/kurang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/levelbanyakAir"
+            android:layout_toStartOf="@+id/levelbanyakAir"
+            android:src="@drawable/ic_remove"
+            android:onClick="kurangiAir"/>
+
+        <TextView
+            android:id="@+id/levelAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Liter"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/levelbanyakAir"
+            android:textSize="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>
+
